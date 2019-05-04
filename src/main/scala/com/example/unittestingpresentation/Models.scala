@@ -2,7 +2,7 @@ package com.example.unittestingpresentation
 
 object Models {
   case class ClientAlreadyExistsException(client: Client)
-    extends Exception(s"Client already exists: $client")
+    extends Exception(s"Client already exists: ${client.name}")
 
   case class Client(name: String)
 
